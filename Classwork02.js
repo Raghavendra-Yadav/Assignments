@@ -39,4 +39,21 @@ db.grades.find({ _id: ObjectId("65b9b6f769c4895078585dc0") })
 // Find listings with Wifi in the amenities array
 db.listingsAndReviews.find({ amenities: "Wifi" });
 
+// Insert a document using insertOne( )
+db.UniversityData.insertOne({
+    student_id: 987654,
+    products: [
+      { type: "exam", score: 85 },
+      { type: "homework", score: 72 },
+      { type: "quiz", score: 88 },
+      { type: "homework", score: 95 },
+    ],
+    class_id: 101,
+  });
+
+/* Output: {
+  acknowledged: true,
+  insertedId: ObjectId('65bdc372f440bda6f2d5fbec')
+}
+*/
 
