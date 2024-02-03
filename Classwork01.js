@@ -1,4 +1,4 @@
-// Classwork 1 - 23-1-2024
+// MongoDB Database Operations: Collection creation and data insertion using insertOne( ) and  insertMany( )
 
 // First Query
 // Creating a new collection named 'Details'
