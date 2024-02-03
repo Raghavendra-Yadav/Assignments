@@ -1,1 +1,0 @@
-// MongoDB Database Operations: Collection creation and data insertion using insertOne( ) and  insertMany( )
