@@ -57,3 +57,81 @@ db.UniversityData.insertOne({
 }
 */
 
+// Insert many documents using insertMany( )
+db.UniversityData.insertMany([
+    {
+      student_id: 987655,
+      products: [
+        {
+          type: "quiz",
+          score: 65,
+        },
+        {
+          type: "homework",
+          score: 80,
+        },
+        {
+          type: "quiz",
+          score: 75,
+        },
+        {
+          type: "exam",
+          score: 92,
+        },
+      ],
+      class_id: 552,
+    },
+    {
+      student_id: 654321,
+      products: [
+        {
+          type: "exam",
+          score: 78,
+        },
+        {
+          type: "quiz",
+          score: 62,
+        },
+        {
+          type: "homework",
+          score: 88,
+        },
+        {
+          type: "exam",
+          score: 95,
+        },
+      ],
+      class_id: 553,
+    },
+    {
+      student_id: 111222,
+      products: [
+        {
+          type: "quiz",
+          score: 50,
+        },
+        {
+          type: "homework",
+          score: 40,
+        },
+        {
+          type: "exam",
+          score: 60,
+        },
+        {
+          type: "homework",
+          score: 78,
+        },
+      ],
+      class_id: 554,
+    },
+  ]);
+
+/* Output:{
+    acknowledged: true,
+    insertedIds: {
+      '0': ObjectId('65bdc7f3f440bda6f2d5fbed'),
+      '1': ObjectId('65bdc7f3f440bda6f2d5fbee'),
+      '2': ObjectId('65bdc7f3f440bda6f2d5fbef')
+    }
+  } */
