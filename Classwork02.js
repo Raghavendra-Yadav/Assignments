@@ -8,7 +8,6 @@
 
 // Operators
 // Use the 'sample_airbnb' database
-use sample_airbnb
 
 // AND logic : Find listings with both Wifi and TV amenities
 db.listingsAndReviews.find({ $and: [{ amenities: "Wifi" }, { amenities: "TV" }] });
@@ -135,3 +134,28 @@ db.UniversityData.insertMany([
       '2': ObjectId('65bdc7f3f440bda6f2d5fbef')
     }
   } */
+
+// Less than : Find scores less than 59
+db.UniversityData.find({ "products.score": { $lt: 59 } });
+
+// Less than or equal : Find scores less than or equal to 58
+db.UniversityData.find({ "products.score": { $lte: 58 } });
+
+// Greater than : Find scores greater than 59
+db.UniversityData.find({ "products.score": { $gt: 59 } });
+
+// Greater than or equal : Find scores greater than or equal to 59
+db.UniversityData.find({ "products.score": { $gte: 59 } });
+
+// student_id matching specific values using $in
+db.UniversityData.find({ student_id: { $in: [654321, 546789] } });
+
+//_id matching specific values using $in and ObjectId
+db.UniversityData.find({
+    _id: {
+      $in: [
+        ObjectId('65bdc7f3f440bda6f2d5fbed'),
+        ObjectId('65bdc7f3f440bda6f2d5fbee')
+      ]
+    }
+  });
