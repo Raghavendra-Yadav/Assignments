@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import pprint 
 import insertOneUsingCRUD
 
-uri = "mongodb+srv://graghavendrayadav:Raghu@cluster0.gwjlwmk.mongodb.net/"
+uri = "mongodb+srv://graghavendrayadav:xxxxx@cluster0.gwjlwmk.mongodb.net/"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))

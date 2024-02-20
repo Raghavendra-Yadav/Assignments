@@ -3,7 +3,6 @@ from pymongo.server_api import ServerApi
 from datetime import datetime, timezone
 import pprint 
 from insertOneUsingCRUD import uri
-# uri = "mongodb+srv://nikshepkulli9:mongodb1234@cluster0.2z6l7np.mongodb.net/?retryWrites=true&w=majority"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))

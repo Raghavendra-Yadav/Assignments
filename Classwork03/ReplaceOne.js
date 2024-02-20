@@ -1,5 +1,5 @@
 db.books.replaceOne(
-  {_id: ObjectId("65c292b7dd77e720d30e243e")},
+  { _id: ObjectId("65c292b7dd77e720d30e243e") },
   {
     _id: ObjectId("65c292b7dd77e720d30e243e"),
     title: "Deep Dive into React Hooks",
@@ -11,7 +11,7 @@ db.books.replaceOne(
 );
 
 db.books.replaceOne(
-  {_id: ObjectId("65c292b7dd77e720d30e243e")},
+  { _id: ObjectId("65c292b7dd77e720d30e243e") },
   {
     title: "Deep Dive into React Hooks",
     ISBN: "0-3182-1299-6",
@@ -20,5 +20,5 @@ db.books.replaceOne(
     authors: ["Ada Lovelace"],
   }
 );
-//To make sure we have the doccument
-db.books.findOne({_id: ObjectId("65c292b7dd77e720d30e243e")});
+//To make sure we have the document
+db.books.findOne({ _id: ObjectId("65c292b7dd77e720d30e243e") });
